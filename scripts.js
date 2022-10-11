@@ -76,6 +76,7 @@ function write(element, selector, content) {
 
 var input = document.getElementById('input')
 input.addEventListener('change', function () {
+    document.getElementById('select').style.display = "none";
     readXlsxFile(input.files[0]).then(function (rows) {
         rows.shift(); // remove first row with the headers
 
