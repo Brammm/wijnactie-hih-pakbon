@@ -4,9 +4,10 @@
 <head>
     <meta charset="utf-8">
 
-    <title>HTML5 Template</title>
+    <title>Bestellingen Wijnactie VZW Hand in Hand</title>
     <meta name="description" content="Bestelbon Wijnactie Hand in Hand">
     <meta name="author" content="Bram Van der Sype">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
@@ -14,46 +15,49 @@
 <div id="orders"></div>
 
 <template id="table">
-    <table>
+    <table class="w-full mb-8" style="page-break-after: always">
         <thead>
             <tr>
-                <th>Naam:</th>
-                <th class="name" colspan="6"></th>
+                <th colspan="2" class="text-left">Naam:</th>
+                <th class="name text-left border border-slate-600" colspan="5"></th>
             </tr>
             <tr>
-                <th>Contactpersoon:</th>
-                <th class="contact" colspan="6"></th>
+                <th colspan="2" class="text-left">Contactpersoon:</th>
+                <th class="contact text-left border border-slate-600" colspan="5"></th>
             </tr>
             <tr>
-                <th colspan="7" ></th>
+                <th colspan="7">&nbsp;</th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td></td>
-                <td>Type</td>
-                <td>Benaming</td>
-                <td>P/fles</td>
-                <td>&euro;</td>
-                <td>Aant.Fles.</td>
-                <td>Aant.doz.</td>
+                <td class="border border-slate-600">Type</td>
+                <td class="border border-slate-600">Benaming</td>
+                <td class="border border-slate-600 text-right">P/fles</td>
+                <td class="border border-slate-600 text-right">&euro;</td>
+                <td class="border border-slate-600 text-right">Aant.Fles.</td>
+                <td class="border border-slate-600 text-right">Aant.doz.</td>
             </tr>
         </tbody>
         <tfoot>
             <tr>
-                <td colspan="2"></td>
-                <td colspan="4">Totaal aantal flessen</td>
-                <td class="total_bottles"></td>
+                <td colspan="7">&nbsp;</td>
             </tr>
             <tr>
                 <td colspan="2"></td>
-                <td colspan="4">Totaal aantal verpakkingen wijn/porto</td>
-                <td></td>
+                <td colspan="3" class="text-right border border-slate-600">Totaal aantal flessen</td>
+                <td colspan="2" class="total_bottles text-right border border-slate-600"></td>
             </tr>
             <tr>
                 <td colspan="2"></td>
-                <td colspan="4">Totaal bedrag</td>
-                <td class="total_price"></td>
+                <td colspan="3" class="text-right border border-slate-600">Totaal aantal verpakkingen wijn/porto</td>
+                <td colspan="2" class="border border-slate-600"></td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+                <td colspan="3" class="text-right border border-slate-600">Totaal bedrag</td>
+                <td colspan="2" class="total_price text-right border border-slate-600"></td>
             </tr>
             <tr>
                 <td></td>
@@ -73,13 +77,13 @@
 
 <template id="row">
     <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td class="border border-slate-600"></td>
+        <td class="border border-slate-600"></td>
+        <td class="border border-slate-600"></td>
+        <td class="border border-slate-600 text-right"></td>
+        <td class="border border-slate-600 text-right"></td>
+        <td class="border border-slate-600 text-right"></td>
+        <td class="border border-slate-600"></td>
     </tr>
 </template>
 

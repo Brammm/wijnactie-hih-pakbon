@@ -115,8 +115,9 @@ input.addEventListener('change', function () {
             write(table, '.name', orderRow[21] || orderRow[1]);
             write(table, '.contact', orderRow[20]);
             write(table, '.total_bottles', totalBottles);
+            write(table, '.total_price', formatter.format(totalPrice));
             write(table, '.payment', orderRow[14]);
-            write(table, '.total_price', orderRow[16]);
+            write(table, '.delivery', orderRow[16]);
 
             orders.appendChild(table);
         });
