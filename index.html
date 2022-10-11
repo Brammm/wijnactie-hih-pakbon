@@ -1,0 +1,89 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>HTML5 Template</title>
+    <meta name="description" content="Bestelbon Wijnactie Hand in Hand">
+    <meta name="author" content="Bram Van der Sype">
+</head>
+
+<body>
+<input id="input" type="file" />
+<div id="orders"></div>
+
+<template id="table">
+    <table>
+        <thead>
+            <tr>
+                <th>Naam:</th>
+                <th class="name" colspan="6"></th>
+            </tr>
+            <tr>
+                <th>Contactpersoon:</th>
+                <th class="contact" colspan="6"></th>
+            </tr>
+            <tr>
+                <th colspan="7" ></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td>Type</td>
+                <td>Benaming</td>
+                <td>P/fles</td>
+                <td>&euro;</td>
+                <td>Aant.Fles.</td>
+                <td>Aant.doz.</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2"></td>
+                <td colspan="4">Totaal aantal flessen</td>
+                <td class="total_bottles"></td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+                <td colspan="4">Totaal aantal verpakkingen wijn/porto</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+                <td colspan="4">Totaal bedrag</td>
+                <td class="total_price"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Betaling</td>
+                <td class="payment"></td>
+                <td colspan="4"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Levering of afhaling</td>
+                <td class="delivery"></td>
+                <td colspan="4"></td>
+            </tr>
+        </tfoot>
+    </table>
+</template>
+
+<template id="row">
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</template>
+
+<script src="https://unpkg.com/read-excel-file@5.x/bundle/read-excel-file.min.js"></script>
+<script src="scripts.js"></script>
+</body>
+</html>
